@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67010D54-F64D-4231-B29F-F31EE4E14CBE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kirthos.Mods.TransportPipe</RootNamespace>
+    <AssemblyName>TransportPipe</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Server\Mods\KirthosMods\TransportPipe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Server\Mods\KirthosMods\TransportPipe\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Asphalt-ModKit_v.0.4.6">
+      <HintPath>..\..\Server\Mods\Asphalt-ModKit_v.0.4.6.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Core">
+      <HintPath>..\..\DLL\Eco.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Gameplay">
+      <HintPath>..\..\DLL\Eco.Gameplay.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.ModKit">
+      <HintPath>..\..\DLL\Eco.ModKit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Mods">
+      <HintPath>..\..\DLL\Eco.Mods.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>..\..\DLL\Eco.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Simulation">
+      <HintPath>..\..\DLL\Eco.Simulation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Stats">
+      <HintPath>..\..\DLL\Eco.Stats.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.World">
+      <HintPath>..\..\DLL\Eco.World.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CountBlockCommands.cs" />
+    <Compile Include="Eco\BeltSlotBlock.cs" />
+    <Compile Include="Eco\Components\AutomaticCraftingComponent.cs" />
+    <Compile Include="Eco\Items\WoodenWrench.cs" />
+    <Compile Include="Eco\Items\SteelWrench.cs" />
+    <Compile Include="Eco\Items\WoodenGear.cs" />
+    <Compile Include="Eco\Items\WoodenTransportPipe.cs" />
+    <Compile Include="Eco\Objects\PrinterObject.cs" />
+    <Compile Include="Eco\Objects\QuarryObject.cs" />
+    <Compile Include="Eco\Items\WoodenToElectric.cs" />
+    <Compile Include="Eco\Objects\HopperObject.cs" />
+    <Compile Include="Eco\Items\Lubricant.cs" />
+    <Compile Include="Eco\Items\DebugWrench.cs" />
+    <Compile Include="Eco\Skills\AdvancedMachinery.cs" />
+    <Compile Include="Eco\Skills\Automation.cs" />
+    <Compile Include="Eco\Skills\MachineryCrafting.cs" />
+    <Compile Include="Eco\Skills\MachineryCraftingEfficiency.cs" />
+    <Compile Include="Eco\Skills\PipeCraftingEfficiency.cs" />
+    <Compile Include="Eco\Skills\MachineryCraftingSpeed.cs" />
+    <Compile Include="Eco\Skills\PipeEngineer.cs" />
+    <Compile Include="Eco\Skills\PipeCrafting.cs" />
+    <Compile Include="Eco\Skills\PipeCraftingSpeed.cs" />
+    <Compile Include="Eco\Skills\AdvancedPetrolRefining.cs" />
+    <Compile Include="Eco\Skills\AdvancedPetrolRefiningEfficiency.cs" />
+    <Compile Include="Eco\Skills\AdvancedPetrolRefiningSpeed.cs" />
+    <Compile Include="Eco\Items\Wrench.cs" />
+    <Compile Include="Eco\BaseTransportPipe.cs" />
+    <Compile Include="Gateway.cs" />
+    <Compile Include="ModsUtil.cs" />
+    <Compile Include="PipeMods\Filter.cs" />
+    <Compile Include="PipeMods\TransportPipeManager.cs" />
+    <Compile Include="PipeMods\TransportPipeLinker.cs" />
+    <Compile Include="PipeMods\TransportPipeEventListener.cs" />
+    <Compile Include="TransportPipePlugin.cs" />
+    <Compile Include="Eco\Items\EelctricTransportPipe.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PipeMods\TransportPipeInfo.cs" />
+    <Compile Include="Eco\Objects\ConnectorObject.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

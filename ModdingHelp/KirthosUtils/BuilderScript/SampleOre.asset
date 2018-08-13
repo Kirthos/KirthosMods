@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bad84a2cfb63014f88243989c9d3ef2, type: 3}
+  m_Name: SampleOre
+  m_EditorClassIdentifier: 
+  Blocks:
+  - Name: SampleOre
+    Builder: {fileID: 11400000, guid: ea4decf893bd888448e402e2ab9bbf03, type: 2}
+    Material: {fileID: 2100000, guid: f6db7837ffd4f464faeede9ae2df4935, type: 2}
+    Materials: []
+    MinimapColor: {r: 0.46666667, g: 0.6901961, b: 1, a: 1}
+    IsWater: 0
+    Solid: 1
+    BuildCollider: 1
+    Rendered: 1
+    ShadowCastingMode: 1
+    Layer: Terrain
+    Category: Default
+    BlendingPriority: 0
+    categoryID: 0
+    nameID: 0
+    GenerateMeshCollider: 0
+    IsEmpty: 0
+    PrefabHeightOffset: -0.5
+    walkOnPrefab: {fileID: 0}
+    AudioCategory: 
+    MusicCategory: 
+    Effects: []
+    EffectNames: []
+    Interactable: 0
+    SticksToWalls: 0
+    Editor: {fileID: 0}
+  - Name: SampleOreStacked1
+    Builder: {fileID: 11400000, guid: b84d927b1e8053540976831720c848bd, type: 2}
+    Material: {fileID: 2100000, guid: f6db7837ffd4f464faeede9ae2df4935, type: 2}
+    Materials: []
+    MinimapColor: {r: 0.46666667, g: 0.6901961, b: 1, a: 1}
+    IsWater: 0
+    Solid: 1
+    BuildCollider: 1
+    Rendered: 1
+    ShadowCastingMode: 1
+    Layer: Terrain
+    Category: Default
+    BlendingPriority: 0
+    categoryID: 0
+    nameID: 0
+    GenerateMeshCollider: 0
+    IsEmpty: 0
+    PrefabHeightOffset: 0
+    walkOnPrefab: {fileID: 0}
+    AudioCategory: 
+    MusicCategory: 
+    Effects: []
+    EffectNames: []
+    Interactable: 0
+    SticksToWalls: 0
+    Editor: {fileID: 0}
+  - Name: SampleOreStacked2
+    Builder: {fileID: 11400000, guid: e87dfd8296b312a46b1741a6b4f52320, type: 2}
+    Material: {fileID: 2100000, guid: f6db7837ffd4f464faeede9ae2df4935, type: 2}
+    Materials: []
+    MinimapColor: {r: 0.46666667, g: 0.6901961, b: 1, a: 1}
+    IsWater: 0
+    Solid: 1
+    BuildCollider: 1
+    Rendered: 1
+    ShadowCastingMode: 1
+    Layer: Terrain
+    Category: Default
+    BlendingPriority: 0
+    categoryID: 0
+    nameID: 0
+    GenerateMeshCollider: 0
+    IsEmpty: 0
+    PrefabHeightOffset: 0
+    walkOnPrefab: {fileID: 0}
+    AudioCategory: 
+    MusicCategory: 
+    Effects: []
+    EffectNames: []
+    Interactable: 0
+    SticksToWalls: 0
+    Editor: {fileID: 0}
+  - Name: SampleOreStacked3
+    Builder: {fileID: 11400000, guid: dc19e5c7ebf9a7b4e9b72d094c8936b8, type: 2}
+    Material: {fileID: 2100000, guid: f6db7837ffd4f464faeede9ae2df4935, type: 2}
+    Materials: []
+    MinimapColor: {r: 0.46666667, g: 0.6901961, b: 1, a: 1}
+    IsWater: 0
+    Solid: 1
+    BuildCollider: 1
+    Rendered: 1
+    ShadowCastingMode: 1
+    Layer: Terrain
+    Category: Default
+    BlendingPriority: 0
+    categoryID: 0
+    nameID: 0
+    GenerateMeshCollider: 0
+    IsEmpty: 0
+    PrefabHeightOffset: -0.5
+    walkOnPrefab: {fileID: 0}
+    AudioCategory: 
+    MusicCategory: 
+    Effects: []
+    EffectNames: []
+    Interactable: 0
+    SticksToWalls: 0
+    Editor: {fileID: 0}
+  - Name: SampleOreStacked4
+    Builder: {fileID: 11400000, guid: 8c9ce665c87a1e944b15f6c9c9678343, type: 2}
+    Material: {fileID: 2100000, guid: f6db7837ffd4f464faeede9ae2df4935, type: 2}
+    Materials: []
+    MinimapColor: {r: 0.46666667, g: 0.6901961, b: 1, a: 1}
+    IsWater: 0
+    Solid: 1
+    BuildCollider: 1
+    Rendered: 1
+    ShadowCastingMode: 1
+    Layer: Terrain
+    Category: Default
+    BlendingPriority: 0
+    categoryID: 0
+    nameID: 0
+    GenerateMeshCollider: 0
+    IsEmpty: 0
+    PrefabHeightOffset: -0.5
+    walkOnPrefab: {fileID: 0}
+    AudioCategory: 
+    MusicCategory: 
+    Effects: []
+    EffectNames: []
+    Interactable: 0
+    SticksToWalls: 0
+    Editor: {fileID: 0}

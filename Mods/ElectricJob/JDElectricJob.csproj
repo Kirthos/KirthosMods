@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4E5F5C5-EF33-4D4F-ACD6-199B28CE355C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JDElectricJob</RootNamespace>
+    <AssemblyName>JDElectricJob</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Asphalt-ModKit">
+      <HintPath>..\..\DLL\Asphalt-ModKit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Core">
+      <HintPath>..\..\DLL\Eco.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Gameplay">
+      <HintPath>..\..\DLL\Eco.Gameplay.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.ModKit">
+      <HintPath>..\..\DLL\Eco.ModKit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Mods">
+      <HintPath>..\..\DLL\Eco.Mods.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>..\..\DLL\Eco.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Simulation">
+      <HintPath>..\..\DLL\Eco.Simulation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.Stats">
+      <HintPath>..\..\DLL\Eco.Stats.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.World">
+      <HintPath>..\..\DLL\Eco.World.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eco.WorldGenerator">
+      <HintPath>..\..\DLL\Eco.WorldGenerator.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\BrokenComponent.cs" />
+    <Compile Include="Items\RepairToolKit.cs" />
+    <Compile Include="Skills\BasicESmelting.cs" />
+    <Compile Include="Skills\BasicESmeltingEfficiency.cs" />
+    <Compile Include="Skills\BasicESmeltingSpeed.cs" />
+    <Compile Include="Skills\CarefulWorkerSkill.cs" />
+    <Compile Include="Skills\BasicEWorking.cs" />
+    <Compile Include="Skills\BasicEWorkingEfficiency.cs" />
+    <Compile Include="Skills\BasicEWorkingSpeed.cs" />
+    <Compile Include="Items\JDBattery.cs" />
+    <Compile Include="Objects\JDBatteryCharger.cs" />
+    <Compile Include="Objects\JDBatteryGenerator.cs" />
+    <Compile Include="Items\JDBigBattery.cs" />
+    <Compile Include="Recipes\JDBrick.cs" />
+    <Compile Include="Recipes\JDCharcoal.cs" />
+    <Compile Include="Recipes\JDCorrugatedSteel.cs" />
+    <Compile Include="Objects\JDEHammer.cs" />
+    <Compile Include="Skills\JDElectric.cs" />
+    <Compile Include="Skills\JDElectrical.cs" />
+    <Compile Include="JDElectronicsPlugin.cs" />
+    <Compile Include="Recipes\JDFlatSteel.cs" />
+    <Compile Include="Recipes\JDFramedGlass.cs" />
+    <Compile Include="Objects\JDFurnace.cs" />
+    <Compile Include="Recipes\JDGarbageCoal2.cs" />
+    <Compile Include="Recipes\JDGlass.cs" />
+    <Compile Include="Objects\JDKiln.cs" />
+    <Compile Include="Recipes\JDRebar.cs" />
+    <Compile Include="Recipes\JDRivet.cs" />
+    <Compile Include="Recipes\JDSmeltCopper.cs" />
+    <Compile Include="Recipes\JDSmeltGold.cs" />
+    <Compile Include="Recipes\JDSmeltIron.cs" />
+    <Compile Include="Recipes\JDSteel.cs" />
+    <Compile Include="Recipes\JDSteelPipe.cs" />
+    <Compile Include="Recipes\JDSteelRivets.cs" />
+    <Compile Include="Items\JDUnchargedBattery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
