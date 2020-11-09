@@ -3,14 +3,13 @@ All my mods for ECO Global Survival
 
 This repository contains all the code I have written for ECO Global survivor.  
 It don't contains the Unity assets for the mod but only the source code.   
-The ModdingHelp folder contains Unity asset package with script and asset for Unity editor.  
+The ModdingHelp folder contains Unity asset package with script and asset for Unity editor.
+Link to Eco-mods to download my published mods : https://forum.play.eco/filebase/user-file-list/458-kirthos/?pageNo=1&sortField=downloads&sortOrder=DESC
 
-## Some mods are outdated from the game and was not updated for the last Eco version
-- Active Craft
-- Kirthos Core Mod
+## All my mods are outdated and are not updated to the latest Eco version.
 
-## Some mods are not finish. These mod can't be downloaded anywhere
-- Transport Pipe (The 1.3 don't exist)
+## Some mods are not finish. These mods can't be downloaded anywhere
+- Transport Pipe (The 1.3 doesn't exist)
 - Molecular Storage
 - More Recipe
 - Server Mods
